@@ -1,73 +1,63 @@
-📝 Syracuse Women’s Lacrosse Stats — Stakeholder Report
-1️⃣ Objective
+# 🥍 Syracuse Women’s Lacrosse Stats – Stakeholder Report
 
+## 🎯 Objective
 Analyze Syracuse Women’s Lacrosse 2024 season statistics to identify top performers and trends, and showcase how AI/LLM tools accelerated the analysis process.
 
-2️⃣ Data Overview
+---
 
-Source: Syracuse Women’s Lacrosse Stats (Excel)
+## 📊 Data Overview
 
-Rows: 32 players
+- **Source**: Syracuse Women’s Lacrosse Stats (Excel format)
+- **Rows**: 32 players
+- **Key Columns**:
+  - Goals (G), Assists (A), Points (PTS)
+  - Shots, Shots on Goal (SH, SOG)
+  - Caused Turnovers (CT), Ground Balls (GB), Draw Controls (DC)
 
-Key Columns:
+---
 
-Goals (G), Assists (A), Points (PTS)
+## 🧼 Cleaning Steps
 
-Shots, Shots on Goal (SH, SOG)
+- Removed blank rows and standardized column names
+- Split `GP-GS` (Games Played-Games Started) into two columns
+- Split `RC-YC-GC` (Red Card-Yellow Card-Green Card) into separate fields
+- Handled missing values for goalkeepers (GK-specific stats)
 
-Caused Turnovers (CT), Ground Balls (GB), Draw Controls (DC)
+---
 
-Cleaning Steps:
+## 📈 Visual Insights
 
-Removed blank rows and standardized column names
+- **Top 10 Players by G+A**  
+  Stacked bar chart using dark green (Goals) and purple (Assists) from `viridis` palette
 
-Split GP-GS (Games Played–Games Started) into two columns
+- **Donut Chart for CT**  
+  Displayed top 10 players by caused turnovers
 
-Split RC-YC-GC (Red/Yellow/Green Cards) into three columns
+- **Boxplot of Goals by Shot Group**  
+  Helped identify efficiency trends
 
-3️⃣ Key Insights
-🏆 Top Performers
+- **Histogram of Shot Attempts**  
+  Distribution of total shooting activity
 
-Points Leaders: Player X, Player Y, Player Z combined for the highest total points.
+---
 
-Assist Leaders: Player A and Player B contributed most assists, showing playmaking ability.
+## 🤖 Use of AI/LLM Tools
 
-Goals + Assists: Stacked bar chart visualizes the offensive contribution of the top 10 players.
+This project heavily utilized **LLM-based assistance (ChatGPT)** for:
 
-🛡️ Defensive Impact
+- Designing custom Python/Seaborn code
+- Debugging data cleaning logic
+- Selecting visually appealing color palettes
+- Suggesting effective plot types
+- Writing markdown documentation & summaries
 
-Caused Turnovers (CT): Donut chart highlights the top 10 defenders forcing turnovers.
+LLMs significantly **accelerated the workflow** by reducing the need to search for syntax or libraries, making this a great example of **decision-making with modern AI tools**.
 
-Ground Balls (GB): Boxplot shows distribution of ground ball recoveries across players.
+---
 
-📈 Trends
+## 🔚 Conclusion
 
-High positive correlation between shots on goal (SOG) and goals scored (G).
+This analysis helps coaches and stakeholders identify standout performers and tactical patterns. With AI support, the end-to-end analysis was both **faster** and more **insightful**, demonstrating the power of LLMs in data-driven decision-making workflows.
 
-Playmakers with high assists often correlate with higher team possession time (indicated by DC/GB).
+---
 
-4️⃣ Visualizations Included
-
-Bar Plot: Top 10 scorers
-
-Bar Plot: Top 10 assist providers
-
-Stacked Bar: Goals + Assists for top 10 players
-
-Donut Chart: Top 10 players by Caused Turnovers (CT)
-
-Boxplot/Histogram: Shot and scoring distribution
-
-5️⃣ AI/LLM Integration
-
-This project demonstrates how AI and LLM tools (ChatGPT) were used to:
-
-Generate starter code for loading, cleaning, and analyzing data
-
-Suggest relevant visualizations (bar, stacked bar, donut)
-
-Recommend color palettes for professional‑looking plots
-
-Draft README, prompts_used, and this Stakeholder Report for easy reproducibility
-
-By leveraging AI, the entire analysis pipeline — from raw Excel data to cleaned insights and stakeholder‑ready visuals — was built 3–4× faster than a manual approach.
