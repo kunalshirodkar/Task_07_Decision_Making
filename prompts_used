@@ -1,0 +1,23 @@
+Prompt 1:
+"Can you help me generate code to load and clean a Women's Lacrosse dataset in Excel using pandas?"
+
+Prompt 2:
+"Split the 'GP-GS' and 'RC-YC-GC' columns into separate columns."
+
+Prompt 3:
+"I want to plot the top 10 scorers and assist providers using bar plots in Seaborn."
+
+Prompt 4:
+"Create a stacked bar plot showing goals and assists side by side for the top 10 players."
+
+Prompt 5:
+"Can you suggest 2 good colors from the viridis palette?"
+
+Prompt 6:
+"Generate a donut chart showing the top 10 players by CT (caused turnovers)."
+
+Prompt 7:
+"I want a histogram of shots taken and a boxplot of goals by shot attempt group."
+
+Prompt 8:
+"Give me final report, prompts file, and GitHub folder structure for OPT Task 07."
